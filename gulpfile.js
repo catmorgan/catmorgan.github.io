@@ -3,19 +3,16 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var sass = require('gulp-sass');
 var del = require('del');
 
 gulp.task('clean',function(){
 	del('dist');
 });
 
-gulp.task('root', function(){
-	return gulp.src('index.html')
-		.pipe(gulp.dest("dist"));
-});
-
-gulp.task('styles', function(){
-	return gulp.src('styles/index.css')
+gulp.task('sass', function(){
+	return gulp.src('assets/styles/index.scss')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest("dist"));
 });
 
@@ -29,4 +26,4 @@ gulp.task('build', function(){
 		.pipe(gulp.dest("dist"));
 });
 
-gulp.task('default',['clean','root','styles','build']);
+gulp.task('default',['clean','sass','build']);
