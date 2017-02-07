@@ -3,5 +3,48 @@ Cat Morgan
 catmorgan.github.io
 base CSS file
 **/
-h1 {
-  background: red; }
+body {
+  margin: 0px;
+  font-family: "Open Sans Regular", Arial, sans-serif; }
+
+.site-header {
+  width: 100%;
+  height: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header-bg {
+  background: url(../assets/images/header.jpg) no-repeat center center;
+  filter: blur(2px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.site-header h1 {
+  color: #f0f0f0;
+  font-size: 50px;
+  min-width: 500px;
+  border-bottom: thin solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: "Open Sans Light", Arial, sans-serif; }
+
+.about {
+  background-color: #90a09f;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../assets/fonts/OpenSans-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../assets/fonts/OpenSans-Light.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Open Sans Semi-bold";
+  src: url(../assets/fonts/OpenSans-Semibold.ttf) format("truetype"); }

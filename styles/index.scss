@@ -1,0 +1,24 @@
+/**
+Cat Morgan
+catmorgan.github.io
+base CSS file
+**/
+@import './modules/variables.scss';
+@import './modules/site.scss';
+@import './modules/header';
+@import './modules/about';
+
+@font-face { 
+   font-family: "Open Sans Regular"; 
+   src: url(#{$font-path}/OpenSans-Regular.ttf) format('truetype'); 
+}
+
+@font-face { 
+   font-family: "Open Sans Light"; 
+   src: url(#{$font-path}/OpenSans-Light.ttf) format('truetype'); 
+}
+
+@font-face { 
+   font-family: "Open Sans Semi-bold"; 
+   src: url(#{$font-path}/OpenSans-Semibold.ttf) format('truetype'); 
+}

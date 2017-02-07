@@ -5,8 +5,9 @@ base JS file
 **/
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Site from './modules/site'
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Site/>,
   document.getElementById('root')
 );
