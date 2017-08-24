@@ -13,7 +13,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../assets/images/bw-header.png) no-repeat center center; }
+  background: url(../assets/images/bw-header.png) no-repeat center center;
+  background-attachment: fixed; }
 
 .header-menu {
   width: 100%;
