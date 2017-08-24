@@ -9,33 +9,57 @@ body {
 
 .site-header {
   width: 100%;
-  height: 100%;
   height: 700px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: url(../assets/images/bw-header.png) no-repeat center center; }
 
-.header-bg {
-  background: url(../assets/images/header.jpg) no-repeat center center;
-  filter: blur(2px);
-  position: absolute;
+.header-menu {
   width: 100%;
-  height: 100%;
-  z-index: -1; }
+  height: 30px;
+  position: absolute;
+  top: 0; }
+  .header-menu a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 4vmax;
+    float: right;
+    margin: 20px 20px 0px 0px; }
+  .header-menu a:hover {
+    color: white;
+    transition: all .2s ease-in-out; }
 
-.site-header h1 {
+.header-content {
   color: #f0f0f0;
-  font-size: 50px;
-  min-width: 500px;
-  border-bottom: thin solid rgba(255, 255, 255, 0.5);
-  text-align: center;
-  font-family: "Open Sans Light", Arial, sans-serif; }
+  text-align: center; }
+  .header-content h1 {
+    min-width: 500px;
+    border-bottom: thin solid rgba(255, 255, 255, 0.5);
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 5vmax; }
 
-.about {
-  background-color: #90a09f;
+.skills {
+  background-color: #f0f0f0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 0px 20px; }
+  .skills h1 {
+    margin-right: 20px;
+    padding: 20px;
+    border-right: thin solid black;
+    font-size: 3vw; }
+
+.skill-container {
+  display: flex;
   align-items: center; }
+  .skill-container .lang {
+    font-size: 2.4vw;
+    padding-right: 50px;
+    width: 20vw; }
+  .skill-container .star-container > * {
+    font-size: 2.4vw;
+    margin-right: 5px; }
 
 @font-face {
   font-family: "Open Sans Regular";

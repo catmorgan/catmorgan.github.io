@@ -5,24 +5,71 @@ export default class About extends React.Component{
 
   render(){
     return (
-      <section className="about">
-        <h1>Profile</h1>
-        <h2>I'm a software engineer.</h2>
-        <div className="about-info">
-          <div>
-            <h1>About Me</h1>
-            <p>
-              I am a software engineer with experience as a full-stack web developer.
-              I currently work at Blizzard Entertainment in Corporate Applications. 
-              
-            </p>
+      <section className="skills">
+        <h1>Skills</h1>
+        <div className="skills-info">
+          <div className="skill-container">
+            <span className="lang"> C# </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
           </div>
-          <div className="profile-picture"/>
-          <div>
-            <h1>Details</h1>
-            <p>
-              
-            </p>
+          <div className="skill-container">
+            <span className="lang"> Javascript </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> HTML/CSS </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> SQL </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star-half" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> Java </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> C++ </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> Racket/Scheme </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
+          </div>
+          <div className="skill-container">
+            <span className="lang"> Lisp </span>
+            <span className="star-container">
+              <i className="fa fa-star" aria-hidden="true"/>
+              <i className="fa fa-star" aria-hidden="true"/>
+            </span>
           </div>
         </div>
       </section>
