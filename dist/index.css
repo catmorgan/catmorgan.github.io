@@ -3,32 +3,65 @@ Cat Morgan
 catmorgan.github.io
 base CSS file
 **/
+html {
+  height: 100%; }
+
 body {
+  height: 100%;
   margin: 0px;
-  font-family: "Open Sans Regular", Arial, sans-serif; }
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  overflow-x: hidden; }
+
+.wrapper {
+  max-width: 980px;
+  margin: auto; }
+
+.about, .skills, .career, .tools {
+  padding: 40px; }
+  .about h1, .skills h1, .career h1, .tools h1 {
+    text-align: center;
+    border-bottom: thin solid rgba(255, 255, 255, 0.5);
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 5vmax;
+    margin-top: 40px;
+    color: #383838; }
+
+.light-text, .dark-text {
+  font-size: 1.2em; }
+
+.light-text {
+  color: #f0f0f0; }
+
+.dark-text {
+  color: #383838; }
 
 .site-header {
   width: 100%;
-  height: 700px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(../assets/images/bw-header.png) no-repeat center center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: cover; }
 
 .header-menu {
-  width: 100%;
-  height: 30px;
-  position: absolute;
-  top: 0; }
-  .header-menu a {
+  padding: 20px 40px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(14, 14, 14, 0.7); }
+
+.icon-container {
+  float: right; }
+  .icon-container a {
     text-decoration: none;
+    color: #616161;
+    font-size: 3.2vmax;
+    margin-left: 20px; }
+  .icon-container a:hover {
     color: #f0f0f0;
-    font-size: 4vmax;
-    float: right;
-    margin: 20px 20px 0px 0px; }
-  .header-menu a:hover {
-    color: white;
     transition: all .2s ease-in-out; }
 
 .header-content {
@@ -40,16 +73,84 @@ body {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 5vmax; }
 
-.skills {
-  background-color: #f0f0f0;
+@media only screen and (max-width: 736px) {
+  .site-header {
+    height: 600px;
+    transition: all 0.1s ease-in; } }
+
+.about {
+  background: linear-gradient(#949494, #f0f0f0); }
+
+.about-content {
+  display: flex; }
+  .about-content .about-picture, .about-content .about-desc {
+    width: 50%; }
+
+.about-picture {
+  background: url(../assets/images/headshot.jpg) no-repeat center center;
+  background-size: contain;
+  height: 415px; }
+
+.about-desc {
+  padding-left: 40px; }
+
+@media only screen and (max-width: 490px) {
+  .about-picture {
+    height: 295px; } }
+
+@media only screen and (max-width: 580px) {
+  .about-picture {
+    height: 370px; } }
+
+@media only screen and (max-width: 736px) {
+  .about-content {
+    flex-direction: column; }
+    .about-content .about-picture, .about-content .about-desc {
+      width: 100%; }
+    .about-content .about-desc {
+      padding: 0px; } }
+
+.career {
+  background: linear-gradient(#f0f0f0, #afafaf); }
+
+.career-content {
   display: flex;
-  align-items: center;
-  padding: 0px 20px; }
-  .skills h1 {
-    margin-right: 20px;
-    padding: 20px;
-    border-right: thin solid black;
-    font-size: 3vw; }
+  flex-direction: column;
+  padding: 0px 40px; }
+
+.career-row {
+  display: flex;
+  font-size: 1.15em;
+  margin-bottom: 40px; }
+  .career-row .career-place {
+    width: 35%;
+    margin-right: 20px; }
+  .career-row .location, .career-row .title {
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .career-row .date {
+    font-family: "Open Sans Light", Arial, sans-serif; }
+  .career-row .career-description {
+    width: 65%; }
+
+@media only screen and (max-width: 736px) {
+  .career-content {
+    padding: 0px; }
+  .career-row {
+    flex-direction: column; }
+    .career-row .career-place, .career-row .career-description {
+      width: 100%; }
+    .career-row .career-place {
+      margin-bottom: 20px; } }
+
+.skills {
+  background: linear-gradient(#afafaf, #cccccc); }
+
+.skill-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px; }
 
 .skill-container {
   display: flex;
@@ -61,6 +162,15 @@ body {
   .skill-container .star-container > * {
     font-size: 2.4vw;
     margin-right: 5px; }
+
+@media only screen and (max-width: 736px) {
+  .skill-content {
+    padding: 0px; } }
+
+.tools {
+  background: url(../assets/images/bw-body.png) no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover; }
 
 @font-face {
   font-family: "Open Sans Regular";

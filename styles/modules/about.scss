@@ -1,29 +1,31 @@
-.skills {
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
+.about {
+  background: linear-gradient(#949494, $light-text-color);
+}
 
-  h1 {
-    margin-right: 20px;
-    padding: 20px;
-    border-right: thin solid black;
-    font-size: 3vw;
+.about-content{
+  display:flex;
+
+  .about-picture, .about-desc {
+    width: 50%;
   }
 }
 
-.skill-container {
-  display: flex;
-  align-items: center;
+.about-picture{
+  background: url(#{$image-path}/headshot.jpg) no-repeat center center;
+  background-size: contain;
+  height: 415px;
+}
 
-  .lang {
-    font-size: 2.4vw;
-    padding-right: 50px;
-    width: 20vw;
-  }
+.about-desc{
+  padding-left: $standard-padding;
+}
 
-  .star-container > * {
-    font-size: 2.4vw;
-    margin-right: 5px;
+@media only screen and (max-width: 490px) { .about-picture { height: 295px;}}
+@media only screen and (max-width: 580px) { .about-picture { height: 370px;}}
+@media only screen and (max-width: 736px) {
+  .about-content {
+    flex-direction: column;
+    .about-picture, .about-desc {width: 100%;}
+    .about-desc {padding: 0px;}
   }
 }

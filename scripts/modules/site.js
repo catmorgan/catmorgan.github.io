@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './header';
 import About from './about';
+import Career from './career';
+import Skills from './skills';
+import Tools from './tools';
 
 export default class Site extends React.Component{
 
@@ -10,6 +13,11 @@ export default class Site extends React.Component{
       <div>
         <Header/>
         <About/>
+        <Career/>
+        <Skills/>
+        <Tools/>
+        {/* <Speaking Opportunities/> */}
+        {/* <Education/> */}
       </div>
     );
   }

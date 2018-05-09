@@ -1,0 +1,38 @@
+.career {
+  background: linear-gradient(#f0f0f0, #afafaf);
+}
+
+.career-content{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+
+.career-row{
+  display: flex;
+  font-size: 1.15em;
+  margin-bottom: $standard-padding;
+
+  .career-place { 
+    width:35%; 
+    margin-right: $standard-padding / 2;
+  }
+
+  .location, .title { 
+    font-weight: bold; 
+    margin-bottom: 5px;
+  }
+
+  .date{font-family: "Open Sans Light", Arial, sans-serif;}
+  .career-description { width: 65%; }
+}
+
+@media only screen and (max-width: 736px) {
+  .career-content {padding: 0px}
+  .career-row {
+    flex-direction: column;
+    .career-place, .career-description {width: 100%;}
+    .career-place {margin-bottom: $standard-padding / 2;}
+  }
+} 
+

@@ -1,0 +1,33 @@
+.skills {
+  background: linear-gradient(#afafaf, #cccccc);
+}
+
+.skill-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $standard-padding / 2;
+}
+
+.skill-container {
+  display: flex;
+  align-items: center;
+
+  .lang {
+    font-size: 2.4vw;
+    padding-right: 50px;
+    width: 20vw;
+  }
+
+  .star-container > * {
+    font-size: 2.4vw;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .skill-content {
+    padding: 0px;
+
+  }
+} 

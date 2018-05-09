@@ -1,4 +1,32 @@
+html {height: 100%;}
+
 body {
+    height: 100%;
     margin: 0px;
     font-family: "Open Sans Regular", Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+.wrapper {
+    max-width: 980px;
+    margin: auto;
+}
+
+.about, .skills, .career, .tools {
+    padding: $standard-padding;
+
+    h1{
+        text-align: center;
+        border-bottom: thin solid rgba(255, 255, 255, 0.5);
+        font-family: "Open Sans Light", Arial, sans-serif;
+        font-size: 5vmax;
+        margin-top: $standard-padding;
+        color: $dark-text-color;
+    }
+}
+
+.light-text, .dark-text {
+    font-size: 1.2em;
+}
+.light-text { color: $light-text-color; }
+.dark-text { color: $dark-text-color; }
