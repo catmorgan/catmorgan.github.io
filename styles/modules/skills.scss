@@ -1,5 +1,5 @@
 .skills {
-  background: linear-gradient(#afafaf, #cccccc);
+  background: linear-gradient(#757575, #cccccc);
 }
 
 .skill-content {
@@ -14,13 +14,13 @@
   align-items: center;
 
   .lang {
-    font-size: 2.4vw;
+    font-size: 1.5em;
     padding-right: 50px;
     width: 20vw;
   }
 
   .star-container > * {
-    font-size: 2.4vw;
+    font-size: 1.5em;
     margin-right: 5px;
   }
 }

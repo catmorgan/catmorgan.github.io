@@ -7,6 +7,7 @@ export default class Header extends React.Component{
     return (
       <section className="site-header">
         <div className="header-menu">
+          <div className="site-name">Cat Morgan</div>
           <div className="icon-container">
             <a className="fab fa-twitter" href="https://twitter.com/cyaaato" target="__blank"/>
             <a className="fab fa-github" href="https://github.com/catmorgan" target="__blank"/>

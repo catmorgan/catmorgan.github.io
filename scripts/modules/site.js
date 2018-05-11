@@ -5,6 +5,7 @@ import About from './about';
 import Career from './career';
 import Skills from './skills';
 import Tools from './tools';
+import Education from './education';
 
 export default class Site extends React.Component{
 
@@ -17,7 +18,8 @@ export default class Site extends React.Component{
         <Skills/>
         <Tools/>
         {/* <Speaking Opportunities/> */}
-        {/* <Education/> */}
+        <Education/>
+        {/* <Hobbies/> */}
       </div>
     );
   }

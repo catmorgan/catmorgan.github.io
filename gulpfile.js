@@ -20,6 +20,7 @@ gulp.task('build', function(){
 	return bundle = browserify({debug : true})
 		.transform('babelify',{presets:['es2015','react']})
 		.require("scripts/index.js", {entry:true})
+		.require("scripts/utilities/sticky-nav.js", {entry:true})
 		.bundle()
 		.pipe(source("bundle.js"))
 		.pipe(buffer())

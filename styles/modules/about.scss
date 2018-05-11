@@ -1,5 +1,5 @@
 .about {
-  background: linear-gradient(#949494, $light-text-color);
+  background: linear-gradient(#949494, #f1f1f1);
 }
 
 .about-content{
@@ -13,19 +13,26 @@
 .about-picture{
   background: url(#{$image-path}/headshot.jpg) no-repeat center center;
   background-size: contain;
-  height: 415px;
+  height: 350px;
+  transition: all ease-in 0.1s;
+  border-radius: 30px;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .about-desc{
   padding-left: $standard-padding;
 }
 
-@media only screen and (max-width: 490px) { .about-picture { height: 295px;}}
+@media only screen and (max-width: 490px) { .about-picture { height: 300px;}}
 @media only screen and (max-width: 580px) { .about-picture { height: 370px;}}
 @media only screen and (max-width: 736px) {
   .about-content {
     flex-direction: column;
     .about-picture, .about-desc {width: 100%;}
     .about-desc {padding: 0px;}
+    .about-picture{margin-bottom: $standard-padding;}
   }
 }

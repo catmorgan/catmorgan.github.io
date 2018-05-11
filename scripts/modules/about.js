@@ -9,7 +9,7 @@ export default class About extends React.Component{
         <div className="wrapper">
           <h1>About</h1>
           <div className="about-content">
-            <div className="about-picture"/>
+            <img className="about-picture"/>
             <p className="about-desc dark-text">
               I currently work as a Software Engineer on Hearthstone at Blizzard Entertainment.
               <br/><br/>

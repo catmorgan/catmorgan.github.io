@@ -12,21 +12,20 @@ body {
     margin: auto;
 }
 
-.about, .skills, .career, .tools {
+.about, .skills, .career, .tools, .education {
     padding: $standard-padding;
 
     h1{
         text-align: center;
-        border-bottom: thin solid rgba(255, 255, 255, 0.5);
+        border-bottom: thin solid rgb(229, 250, 252);
         font-family: "Open Sans Light", Arial, sans-serif;
-        font-size: 5vmax;
-        margin-top: $standard-padding;
+        font-size: 3vmax;
         color: $dark-text-color;
     }
 }
 
 .light-text, .dark-text {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .light-text { color: $light-text-color; }
 .dark-text { color: $dark-text-color; }

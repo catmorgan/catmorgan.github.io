@@ -1,5 +1,5 @@
 .career {
-  background: linear-gradient(#f0f0f0, #afafaf);
+  background: linear-gradient(#f1f1f1, #afafaf, #757575);
 }
 
 .career-content{
@@ -10,7 +10,7 @@
 
 .career-row{
   display: flex;
-  font-size: 1.15em;
+  font-size: 1em;
   margin-bottom: $standard-padding;
 
   .career-place { 
@@ -32,7 +32,12 @@
   .career-row {
     flex-direction: column;
     .career-place, .career-description {width: 100%;}
-    .career-place {margin-bottom: $standard-padding / 2;}
+    .career-place {
+      margin-bottom: $standard-padding / 2;
+
+      div {display: inline-block;}
+      div:last-child{float:right}
+    }
   }
 } 
 
