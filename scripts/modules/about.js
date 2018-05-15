@@ -7,7 +7,7 @@ export default class About extends React.Component{
     return (
       <section className="about light-text">
         <div className="wrapper">
-          <h1>About</h1>
+          <h1><span>About</span></h1>
           <div className="about-content">
             <img className="about-picture" src="./assets/images/headshot.jpg"/>
             <p className="about-desc light-text">

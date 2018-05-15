@@ -7,7 +7,7 @@ export default class Career extends React.Component{
     return (
       <section className="career dark-text">
         <div className="wrapper">
-          <h1>Career</h1>
+          <h1><span>Career</span></h1>
           <div className="career-content">
             <div className="career-row">
               <div className="career-place">

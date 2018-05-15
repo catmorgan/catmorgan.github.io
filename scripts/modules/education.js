@@ -7,7 +7,7 @@ export default class Education extends React.Component{
     return (
       <section className="education dark-text">
         <div className="wrapper">
-          <h1>Education</h1>
+          <h1><span>Education</span></h1>
           <div>
             <div className="college">Vassar College</div>
             <div>

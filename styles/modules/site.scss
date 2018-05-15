@@ -13,21 +13,39 @@ body {
     margin: auto;
 }
 
-.about, .skills, .career, .tools, .education {
+.about, .skills, .career, .tools, .education, .articles {
     padding: $standard-padding;
 
     h1{
         text-align: center;
         font-family: "Open Sans Light", Arial, sans-serif;
         font-size: 3vmax;
+        position: relative;
+
+        span { 
+            position: relative;
+            padding: $standard-padding /2;
+        }
+    }
+}
+
+.about, .skills, .career, .education{
+    h1::before {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 0px;
     }
 }
 
 .light-text, .dark-text { font-size: 1em; }
 .light-text { color: $light-text-color; }
 .dark-text { color: $dark-text-color; }
-.light-text h1{border-bottom: thin solid $light-text-color;}
-.dark-text h1{border-bottom: thin solid $dark-text-color;}
+.light-text h1::before {background: $light-text-color;}
+.dark-text h1::before{background: $dark-text-color;}
 
 .hidden {opacity: 0;}
 

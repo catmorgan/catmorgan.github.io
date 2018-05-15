@@ -1,7 +1,4 @@
-.about {
-  //background: linear-gradient(#949494, #f1f1f1);
-  background: #303030;
-}
+.about, .about h1 > span { background: #4e3745; }
 
 .about-content{ display:flex;}
 
@@ -9,7 +6,7 @@
   background: url(#{$image-path}/headshot.jpg) no-repeat center center;
   background-size: contain;
   height: 350px;
-  transition: all ease-in 0.1s;
+  transition: all ease-in-out 0.1s;
   border-radius: 30px;
 
   &:hover{ transform: scale(1.1); }

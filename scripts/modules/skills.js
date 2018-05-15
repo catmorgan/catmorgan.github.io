@@ -74,7 +74,7 @@ export default class Skills extends React.Component{
     return (
       <section className="skills dark-text">
         <div className="wrapper">
-          <h1>Skills</h1>
+          <h1><span>Skills</span></h1>
           <div className="skill-content">
             {this.state.languages.map((language, index) => {
                 return (

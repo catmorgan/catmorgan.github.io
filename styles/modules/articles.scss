@@ -1,0 +1,40 @@
+.articles {
+  background: #383838;
+  a {
+    color : $light-text-color;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: underline;
+
+      img { transform: scale(1.1); }
+    }
+  }
+
+  img {
+    transition: all ease-in-out 0.1s;
+    border-radius: 30px;
+    margin-right: $standard-padding;
+  }
+}
+
+.article-content a {
+  display: flex;
+  align-items: center;
+}
+
+.article-info {
+  display: inline-block;
+  text-align: center;
+
+  p {font-style: italic;}
+}
+
+
+@media only screen and (max-width: 736px) {
+  .article-content a {
+    flex-direction: column;
+
+    img {margin-right: 0px;}
+  }
+}
