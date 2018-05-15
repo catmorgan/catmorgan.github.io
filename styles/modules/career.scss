@@ -28,17 +28,27 @@
   .career-description { width: 65%; }
 }
 
+@media only screen and (max-width: 490px) { 
+  .career-row .career-place {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .location {width: 50%;}
+}
+
 @media only screen and (max-width: 736px) {
   .career-content {padding: 0px}
+  
   .career-row {
     flex-direction: column;
+
     .career-place, .career-description {width: 100%;}
     .career-place {
-      margin-bottom: $standard-padding / 2;
-
       div {display: inline-block;}
       div:last-child{float:right}
     }
+
+    .title {font-size: 14px;}
   }
 } 
 

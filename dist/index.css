@@ -210,6 +210,13 @@ body {
   .career-row .career-description {
     width: 65%; }
 
+@media only screen and (max-width: 490px) {
+  .career-row .career-place {
+    margin-right: 0px;
+    margin-bottom: 10px; }
+  .location {
+    width: 50%; } }
+
 @media only screen and (max-width: 736px) {
   .career-content {
     padding: 0px; }
@@ -217,12 +224,12 @@ body {
     flex-direction: column; }
     .career-row .career-place, .career-row .career-description {
       width: 100%; }
-    .career-row .career-place {
-      margin-bottom: 20px; }
-      .career-row .career-place div {
-        display: inline-block; }
-      .career-row .career-place div:last-child {
-        float: right; } }
+    .career-row .career-place div {
+      display: inline-block; }
+    .career-row .career-place div:last-child {
+      float: right; }
+    .career-row .title {
+      font-size: 14px; } }
 
 .skills, .skills h1 > span {
   background: #cccccc; }
