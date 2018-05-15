@@ -282,6 +282,8 @@ body {
 .article-info {
   display: inline-block;
   text-align: center; }
+  .article-info h1 {
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.4); }
   .article-info p {
     font-style: italic; }
 
