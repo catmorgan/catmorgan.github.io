@@ -5,7 +5,7 @@ export default class Tools extends React.Component{
 
   render(){
     return (
-      <section className="tools">
+      <section className="tools dark-text">
         <div className="wrapper">
           <h1>Tools & Practices</h1>
           <ul>

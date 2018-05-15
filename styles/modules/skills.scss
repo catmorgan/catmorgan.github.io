@@ -1,17 +1,9 @@
-.skills {
-  background: linear-gradient(#757575, #cccccc);
-}
+.skills { background: #cccccc; }
 
-.skill-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: $standard-padding / 2;
-}
+.skill-content { padding: $standard-padding / 2; }
 
 .skill-container {
-  display: flex;
-  align-items: center;
+  transition: all ease-in-out 0.2s;
 
   .lang {
     font-size: 1.5em;
@@ -19,15 +11,21 @@
     width: 20vw;
   }
 
-  .star-container > * {
+  .star-container {float:right;}
+  .star-container > .fa, .far {
     font-size: 1.5em;
     margin-right: 5px;
+    transition: all ease-in-out 0.2s;
   }
 }
 
-@media only screen and (max-width: 736px) {
-  .skill-content {
-    padding: 0px;
+.skill-container:hover{
+  font-weight: bold;
 
-  }
+  .star-container .fa, .far { margin-right:20px;}
+}
+
+@media only screen and (max-width: 736px) {
+  .skill-content { padding: 0px;}
+  .skill-container:hover .star-container{ .fa, .far { margin-right:8px;}}
 } 
