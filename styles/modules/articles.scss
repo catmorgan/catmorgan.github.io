@@ -1,13 +1,13 @@
 .articles {
   background: #383838;
-  a {
+  span, a {
     color : $light-text-color;
     text-decoration: none;
 
     &:hover{
-      text-decoration: underline;
 
       img { transform: scale(1.1); }
+      .article-button {background: #ad91a2;}
     }
   }
 
@@ -18,7 +18,7 @@
   }
 }
 
-.article-content a {
+.article-content span {
   display: flex;
   align-items: center;
 }
@@ -31,9 +31,20 @@
   p {font-style: italic;}
 }
 
+.article-button {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px $standard-padding / 2;
+  background: $dark-text-color;
+  margin-top: $standard-padding;
+}
+
+@media only screen and (max-width: 490px) { 
+  .articles span:hover {img {transform: none;}}
+}
 
 @media only screen and (max-width: 736px) {
-  .article-content a {
+  .article-content span {
     flex-direction: column;
 
     img {margin-right: 0px;}

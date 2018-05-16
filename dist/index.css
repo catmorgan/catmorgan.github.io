@@ -270,19 +270,19 @@ body {
 
 .articles {
   background: #383838; }
-  .articles a {
+  .articles span, .articles a {
     color: #e5fafc;
     text-decoration: none; }
-    .articles a:hover {
-      text-decoration: underline; }
-      .articles a:hover img {
-        transform: scale(1.1); }
+    .articles span:hover img, .articles a:hover img {
+      transform: scale(1.1); }
+    .articles span:hover .article-button, .articles a:hover .article-button {
+      background: #ad91a2; }
   .articles img {
     transition: all ease-in-out 0.1s;
     border-radius: 30px;
     margin-right: 40px; }
 
-.article-content a {
+.article-content span {
   display: flex;
   align-items: center; }
 
@@ -294,10 +294,21 @@ body {
   .article-info p {
     font-style: italic; }
 
+.article-button {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: #4e3745;
+  margin-top: 40px; }
+
+@media only screen and (max-width: 490px) {
+  .articles span:hover img {
+    transform: none; } }
+
 @media only screen and (max-width: 736px) {
-  .article-content a {
+  .article-content span {
     flex-direction: column; }
-    .article-content a img {
+    .article-content span img {
       margin-right: 0px; } }
 
 .education, .education h1 > span {
