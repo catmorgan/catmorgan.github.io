@@ -17,9 +17,9 @@ export default class Site extends React.Component{
         <Header/>
         <About/>
         <Career/>
+        <Articles/>
         <Skills/>
         <Tools/>
-        <Articles/>
         <Education/>
         {/* <Hobbies/> */}
         <Footer/>
