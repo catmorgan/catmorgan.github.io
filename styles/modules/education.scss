@@ -7,3 +7,11 @@
 
 .college-details{font-style: italic;}
 .college-details.right {float: right;}
+.college-details .minor {font-size: 0.9em;}
+
+@media only screen and (max-width: 490px) {
+  .college-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

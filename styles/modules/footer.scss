@@ -1,0 +1,9 @@
+.footer {
+  background: url(#{$image-path}/footer.jpg) no-repeat bottom left;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 400px;
+  text-align: center;
+
+  h3 {font-weight: lighter;}
+}

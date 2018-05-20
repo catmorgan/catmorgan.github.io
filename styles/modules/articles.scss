@@ -1,5 +1,6 @@
 .articles {
   background: #383838;
+  
   span, a {
     color : $light-text-color;
     text-decoration: none;
@@ -15,6 +16,7 @@
     transition: all ease-in-out 0.1s;
     border-radius: 30px;
     margin-right: $standard-padding;
+    width: 100%;
   }
 }
 

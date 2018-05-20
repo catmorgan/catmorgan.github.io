@@ -9,10 +9,13 @@ export default class Education extends React.Component{
         <div className="wrapper">
           <h1><span>Education</span></h1>
           <div>
-            <div className="college">Vassar College</div>
             <div>
-              <span className="college-details">Bachelor of Arts, Computer Science<br/>Minor in Asian Studies</span>
+              <span className="college">Vassar College</span>
               <span className="college-details right">Class of 2015</span>
+            </div>
+            <div className="college-details">
+              <div>Bachelor of Arts, Computer Science</div>
+              <div className="college-details minor">Minor in Asian Studies</div>
             </div>
           </div>
         </div>

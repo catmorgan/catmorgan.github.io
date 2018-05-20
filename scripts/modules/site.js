@@ -7,6 +7,7 @@ import Skills from './skills';
 import Tools from './tools';
 import Articles from './articles';
 import Education from './education';
+import Footer from './footer';
 
 export default class Site extends React.Component{
 
@@ -21,6 +22,7 @@ export default class Site extends React.Component{
         <Articles/>
         <Education/>
         {/* <Hobbies/> */}
+        <Footer/>
       </div>
     );
   }

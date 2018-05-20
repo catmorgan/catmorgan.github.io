@@ -11,8 +11,8 @@ export default class Career extends React.Component{
           <div className="career-content">
             <div className="career-row">
               <div className="career-place">
-                <div className="location">Blizzard Entertaiment | Hearthstone</div>
-                <div className="date">October 2018 - current</div>
+                <div className="location">Blizzard Entertainment | Hearthstone</div>
+                <div className="date">Oct 2018 - current</div>
               </div>
               <div className="career-description">
                 <div className="title">Software Engineer, Automation</div>
@@ -25,8 +25,8 @@ export default class Career extends React.Component{
 
             <div className="career-row">
               <div className="career-place">
-                <div className="location">Blizzard Entertaiment | Corporate Applications</div>
-                <div className="date">February 2017 - October 2018</div>
+                <div className="location">Blizzard Entertainment | Corporate Applications</div>
+                <div className="date">Feb 2017 - Oct 2018</div>
               </div>
               <div className="career-description">
                 <div className="title">Software Engineer</div>
@@ -35,8 +35,8 @@ export default class Career extends React.Component{
 
             <div className="career-row">
               <div className="career-place">
-                <div className="location">Blizzard Entertaiment | Corporate Applications</div>
-                <div className="date">June 2015 - February 2017</div>
+                <div className="location">Blizzard Entertainment | Corporate Applications</div>
+                <div className="date">June 2015 - Feb 2017</div>
               </div>
               <div className="career-description">
                 <div className="title">Associate Software Engineer</div>
@@ -51,8 +51,8 @@ export default class Career extends React.Component{
 
             <div className="career-row">
               <div className="career-place">
-                <div className="location">Blizzard Entertaiment | Battle.net Game Services</div>
-                <div className="date">May 2014 - August 2014</div>
+                <div className="location">Blizzard Entertainment | Battle.net</div>
+                <div className="date">May 2014 - Aug 2014</div>
               </div>
               <div className="career-description">
                 <div className="title">Software Engineer Intern</div>
@@ -70,7 +70,7 @@ export default class Career extends React.Component{
             <div className="career-row">
               <div className="career-place">
                 <div className="location">Vassar College</div>
-                <div className="date">January 2013 - May 2015</div>
+                <div className="date">Jan 2013 - May 2015</div>
               </div>
               <div className="career-description">
                 <div className="title">Computer Science Assistant and Coach</div>
@@ -86,7 +86,7 @@ export default class Career extends React.Component{
             <div className="career-row">
               <div className="career-place">
                 <div className="location">Vassar College</div>
-                <div className="date">May 2013 - August 2013</div>
+                <div className="date">May 2013 - Aug 2013</div>
               </div>
               <div className="career-description">
                 <div className="title">Undergraduate Research Summer Intern (URSI)</div>

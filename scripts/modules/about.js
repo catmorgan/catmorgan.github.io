@@ -13,10 +13,13 @@ export default class About extends React.Component{
             <p className="about-desc light-text">
               I currently work as a Software Engineer on Hearthstone at Blizzard Entertainment.
               <br/><br/>
-              I like gameplay, artificial intelligence, web development, mobile development, and AR/VR.
+              Technology is so cool! I like gameplay, artificial intelligence, web development, mobile development, and AR/VR.
               <br/><br/> 
               I am an avid programmer, dungeon delver, and gamer. I enjoy attempting to garden and bake, with
-              some relative success.
+              some relative success, and I love learning new things!
+              <br/><br/>
+              A passion of mine is reaching out to young girls and women to promote technology. 
+              Let's get more inclusion in technology together.  
             </p>
           </div>
         </div>

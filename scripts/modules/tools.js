@@ -9,8 +9,6 @@ export default class Tools extends React.Component{
         <div className="wrapper">
           <h1><span>Tools & Practices</span></h1>
           <ul>
-            <li>Sass</li>
-            <li>React</li>
             <li>Visual Studio</li>
             <li>Jenkins</li>
             <li>Unity3D</li>
