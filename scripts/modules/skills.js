@@ -46,7 +46,7 @@ export default class Skills extends React.Component{
         },
         {
           "language" : "Groovy",
-          "expertise" : 1
+          "expertise" : 3
         }
       ]
     }
