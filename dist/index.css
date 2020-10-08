@@ -346,6 +346,12 @@ h1 {
   .footer h3 {
     font-weight: lighter; }
 
+.instagram-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4e3745; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
