@@ -6,18 +6,21 @@ var buffer = require('vinyl-buffer');
 var sass = require('gulp-sass');
 var del = require('del');
 
-gulp.task('clean',function(){
+function clean (cb) {
 	del('dist');
-});
+	cb()
+}
 
-gulp.task('sass', function(){
+function style () {
 	return gulp.src('styles/index.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest("dist"));
-});
+}
 
-gulp.task('build', function(){
-	return bundle = browserify({debug : true})
+function build (cb) {
+	var b = browserify({debug : true});
+
+	return b
 		.transform('babelify',{presets:['es2015','react']})
 		.require("scripts/index.js", {entry:true})
 		.require("scripts/utilities/sticky-nav.js", {entry:true})
@@ -25,6 +28,6 @@ gulp.task('build', function(){
 		.pipe(source("bundle.js"))
 		.pipe(buffer())
 		.pipe(gulp.dest("dist"));
-});
+}
 
-gulp.task('default',['clean','sass','build']);
+exports.default = gulp.series(clean, style, build);
