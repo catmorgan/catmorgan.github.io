@@ -26,13 +26,21 @@ export default class Career extends React.Component{
           <h1><span>Career</span></h1>
           <div className="career-content">
 
+          <CareerRow
+            location="Riot Games | Teamfight Tactics"
+            date="Jan 2021 - current"
+            title="Senior Software Engineer"
+            body="I am a frontend engineer working on PC and mobile, across C++, Javascript/Ember, and a proprietary engine. I have shipped features such as 'TFT Coins',
+            a virtual currency on mobile, and improved the landing page experience for Teamfight Tactics PC players. I implement from UI hooks up to entire systems that support
+            the UI and out of game experiences."
+            />
+
             <CareerRow
             location="Blizzard Entertainment | Unannounced Project"
-            date="Dec 2018 - current"
+            date="Dec 2018 - Dec 2020"
             title="Software Engineer, Automation"
-            body="I design and implement continous integration systems, like automerging in source control and automated testing on mobile devices.
-            I also design and write unit and integration tests for tools, data, and the client. I unblock developers from local issues and help debug build and test failures.
-            Most recently, I have been able to start working on integrated Unity3D Editor tools, which has been really fun and exciting to feel like a full stack developer again."
+            body="I designed and implemented continous integration systems, like automerging in source control and automated testing on mobile devices.
+            I also designed and wrote unit and integration tests for tools, data, and the client. I unblocked developers from local issues and helped debug build and test failures."
             />
 
             <CareerRow

@@ -3,6 +3,7 @@ Cat Morgan
 catmorgan.github.io
 base CSS file
 **/
+@import './node_modules/swiper/swiper-bundle.css';
 @import './modules/variables.scss';
 @import './modules/site.scss';
 @import './modules/header';
@@ -14,19 +15,20 @@ base CSS file
 @import './modules/education';
 @import './modules/footer';
 @import './modules/insta';
+@import './modules/hobbies';
 @import './keyframes';
 
-@font-face { 
-   font-family: "Open Sans Regular"; 
-   src: url(#{$font-path}/OpenSans-Regular.ttf) format('truetype'); 
+@font-face {
+   font-family: "Open Sans Regular";
+   src: url(#{$font-path}/OpenSans-Regular.ttf) format('truetype');
 }
 
-@font-face { 
-   font-family: "Open Sans Light"; 
-   src: url(#{$font-path}/OpenSans-Light.ttf) format('truetype'); 
+@font-face {
+   font-family: "Open Sans Light";
+   src: url(#{$font-path}/OpenSans-Light.ttf) format('truetype');
 }
 
-@font-face { 
-   font-family: "Open Sans Semi-bold"; 
-   src: url(#{$font-path}/OpenSans-Semibold.ttf) format('truetype'); 
+@font-face {
+   font-family: "Open Sans Semi-bold";
+   src: url(#{$font-path}/OpenSans-Semibold.ttf) format('truetype');
 }

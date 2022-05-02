@@ -10,7 +10,7 @@ export default class About extends React.Component{
           <div className="about-content">
             <img className="about-picture" src="./assets/images/headshot.jpg"/>
             <p className="about-desc light-text">
-              I currently work as a Software Engineer on an Unannounced Project at Blizzard Entertainment.
+              I currently work as a Senior Software Engineer on Teamfight Tactics at Riot Games.
               <br/><br/>
               Technology is so cool! I like tools, UI, gameplay, artificial intelligence, web development, mobile development, and AR/VR.
               <br/><br/>

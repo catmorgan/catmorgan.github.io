@@ -12,7 +12,8 @@ function clean (cb) {
 }
 
 function style () {
-	return gulp.src('styles/index.scss')
+	return gulp
+		.src('styles/index.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest("dist"));
 }

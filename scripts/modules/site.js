@@ -31,7 +31,7 @@ export default class Site extends React.Component{
          injectScript
         /> */}
         <Education/>
-        {/* <Hobbies/> */}
+        <Hobbies/>
         {/* <InstagramEmbed
          url='https://instagr.am/p/BrVr5_2HJHZ/'
          maxWidth={980}

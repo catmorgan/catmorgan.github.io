@@ -3,6 +3,7 @@ Cat Morgan
 catmorgan.github.io
 base CSS file
 **/
+@import url(./node_modules/swiper/swiper-bundle.css);
 html {
   height: 100%; }
 
@@ -351,6 +352,11 @@ h1 {
   align-items: center;
   justify-content: center;
   background: #4e3745; }
+
+.hobbies-swiper-slide {
+  object-fit: contain;
+  width: 100%;
+  max-height: 600px; }
 
 @keyframes fadein {
   from {

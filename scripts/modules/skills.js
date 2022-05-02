@@ -37,7 +37,7 @@ export default class Skills extends React.Component{
         },
         {
           "language" : "C++",
-          "expertise" : 2
+          "expertise" : 3
         },
         {
           "language" : "Lisp",
@@ -46,7 +46,11 @@ export default class Skills extends React.Component{
         {
           "language" : "Groovy",
           "expertise" : 3
-        }
+        },
+        {
+          "language":"Ember",
+          "expertise": 2
+        },
       ]
     }
   }
