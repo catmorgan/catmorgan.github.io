@@ -36,7 +36,7 @@ export default class Career extends React.Component{
             />
 
             <CareerRow
-            location="Blizzard Entertainment | WarCraft: Arclight Rumble"
+            location="Blizzard Entertainment | Warcraft: Arclight Rumble"
             date="Dec 2018 - Dec 2020"
             title="Software Engineer, Automation"
             body="I designed and implemented continous integration systems, like automerging in source control and automated testing on mobile devices.
