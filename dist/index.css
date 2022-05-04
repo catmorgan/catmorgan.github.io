@@ -3,7 +3,7 @@ Cat Morgan
 catmorgan.github.io
 base CSS file
 **/
-@import url(./node_modules/swiper/swiper-bundle.css);
+@import url(../node_modules/swiper/swiper-bundle.css);
 html {
   height: 100%; }
 
