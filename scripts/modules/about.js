@@ -8,7 +8,7 @@ export default class About extends React.Component{
         <div className="wrapper">
           <h1><span>About</span></h1>
           <div className="about-content">
-            <img className="about-picture" src="./assets/images/headshot.jpg"/>
+            <img className="about-picture" src="./assets/images/headshot2.jpg"/>
             <p className="about-desc light-text">
               I currently work as a Senior Software Engineer on Teamfight Tactics at Riot Games.
               <br/><br/>

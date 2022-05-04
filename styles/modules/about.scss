@@ -1,6 +1,9 @@
 .about, .about h1 > span { background: $dark-text-color; }
 
-.about-content{ display:flex;}
+.about-content{
+  display:flex;
+  align-items: center;
+}
 
 .about-picture{
   background: url(#{$image-path}/headshot.jpg) no-repeat center center;

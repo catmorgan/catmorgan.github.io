@@ -167,7 +167,8 @@ h1 {
   background: #4e3745; }
 
 .about-content {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .about-picture {
   background: url(../assets/images/headshot.jpg) no-repeat center center;
