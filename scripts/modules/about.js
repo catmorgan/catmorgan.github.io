@@ -12,12 +12,13 @@ export default class About extends React.Component{
             <p className="about-desc light-text">
               I currently work as a Senior Software Engineer on Teamfight Tactics at Riot Games.
               <br/><br/>
-              Technology is so cool! I like tools, UI, gameplay, artificial intelligence, web development, mobile development, and AR/VR.
+              Technology is so cool! There is a piece of technology in nearly every industry that I find interesting.
+              I like tools, UI, gameplay, artificial intelligence, web development, mobile development, and general tech for good.
               <br/><br/>
               I am an avid programmer and gamer. I also enjoy baking, gardening, yoga, and macrame. I'm currently working on a RaspberryPi automated gardening system.
               <br/><br/>
               A passion of mine is being a resource to young girls, women, and students to help them navigate to their goals and dreams through sharing my experiences.
-              Let's get more diversity, inclusion, and equality in technology together.
+              Let's get more diversity, inclusion, and equity in technology together.
             </p>
           </div>
         </div>

@@ -1,5 +1,18 @@
-.hobbies-swiper-slide {
-    object-fit: contain;
+.hobbies {
+    background: #afafaf;;
+}
+
+.slide-container {
+    display:inline-block;
+
+    img {
+        max-width:100%;
+        height: auto;
+        border-radius: 30px;
+    }
+}
+
+.slide-description {
     width: 100%;
-    max-height:600px;
+    text-align: center;
 }

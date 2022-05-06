@@ -354,10 +354,19 @@ h1 {
   justify-content: center;
   background: #4e3745; }
 
-.hobbies-swiper-slide {
-  object-fit: contain;
+.hobbies {
+  background: #afafaf; }
+
+.slide-container {
+  display: inline-block; }
+  .slide-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px; }
+
+.slide-description {
   width: 100%;
-  max-height: 600px; }
+  text-align: center; }
 
 @keyframes fadein {
   from {
@@ -388,3 +397,9 @@ h1 {
 @font-face {
   font-family: "Open Sans Semi-bold";
   src: url(../assets/fonts/OpenSans-Semibold.ttf) format("truetype"); }
+
+.swiper-button-prev {
+  color: #4e3745; }
+
+.swiper-button-next {
+  color: #4e3745; }

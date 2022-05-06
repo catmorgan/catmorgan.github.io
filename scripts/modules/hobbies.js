@@ -1,7 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
-import { Keyboard, Pagination, Navigation  } from "swiper";
+import SwiperCore, { Keyboard, Navigation } from "swiper";
+
+SwiperCore.use([Keyboard, Navigation]);
 
 export default class Hobbies extends React.Component{
 
@@ -13,21 +15,23 @@ export default class Hobbies extends React.Component{
         {"src":"./assets/images/drumstick-holder.jpg", "alt":"A green macrame drum stick holder"},
         {"src":"./assets/images/berry-cake.jpg", "alt":"Lemon cake with vanilla butter cream frosting and berry drizzle"},
         {"src":"./assets/images/yoga.jpg", "alt":"Cat doing yoga - specifically 'Crow' pose"},
-        {"src":"./assets/images/plant-hangers.jpg" , "alt":"A light green macrame plant hanger with an empty pot, and an empty grey macrame plant hanger"},
         {"src":"./assets/images/wedding-cake.jpg" , "alt":"A three tiered white wedding cake with fresh flowers"},
         {"src":"./assets/images/rug.jpg" , "alt":"A half circle macrame rug"},
+        {"src":"./assets/images/lux.jpg" , "alt":"A black dog, Lux, is sitting on a beige couch, staring at the camera"},
       ]
     }
   }
 
   render(){
     return (
-      <section className="hobbies light-text">
+      <section className="hobbies dark-text">
         <div className="wrapper">
           <h1><span>Me in a nut shell</span></h1>
-          <Swiper className="swiper-container"
+          <Swiper
+            className="hobbies-container"
             slidesPerView={2}
-            centeredSlides={true}
+            loop
+            navigation
             spaceBetween={30}
             keyboard={{
               enabled: true,
@@ -35,13 +39,14 @@ export default class Hobbies extends React.Component{
             pagination={{
               clickable: true,
             }}
-            navigation={true}
-            modules={[Keyboard, Pagination, Navigation]}
           >
             {this.state.images.map((image, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <img src={image.src} alt={image.alt} height="500"/>
+                  <div className="slide-container">
+                    <img src={image.src} alt={image.alt}/>
+                    <div className="slide-description">{image.alt}</div>
+                  </div>
                 </SwiperSlide>
               )})
             }

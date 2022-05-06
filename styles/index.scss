@@ -32,3 +32,12 @@ base CSS file
    font-family: "Open Sans Semi-bold";
    src: url(#{$font-path}/OpenSans-Semibold.ttf) format('truetype');
 }
+
+// Swiper overrides
+.swiper-button-prev {
+   color: $dark-text-color;
+}
+
+.swiper-button-next {
+   color:$dark-text-color;
+}

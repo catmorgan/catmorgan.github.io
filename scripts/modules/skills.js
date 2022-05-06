@@ -24,7 +24,7 @@ export default class Skills extends React.Component{
           "expertise":3
         },
         {
-          "language":"React",
+          "language":"React/Ember",
           "expertise": 3
         },
         {
