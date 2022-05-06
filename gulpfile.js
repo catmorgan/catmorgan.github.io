@@ -13,7 +13,7 @@ function clean (cb) {
 
 function style () {
 	return gulp
-		.src('styles/index.scss')
+		.src(['styles/index.scss', 'node_modules/swiper/swiper-bundle.css'])
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest("dist"));
 }
